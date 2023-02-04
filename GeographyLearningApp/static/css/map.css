@@ -1,0 +1,45 @@
+/*GRAPHIC*/
+.svgmap {
+    margin: 0px;
+    background-color: #cac9f0;
+}
+.displayContainer_1 svg polyline {
+    fill: #AAA;
+    transition: fill 0.1s ease-in;
+}
+.displayContainer_1 svg polyline:hover {
+    fill: #6966e8;
+    stroke:black;
+    pointer-events:all;
+}
+.displayContainer_1 svg path:hover {
+    fill: #6966e8;
+    stroke:black;
+    pointer-events:all;
+}
+
+.displayContainer_1 svg{
+    width: 50%;
+    height: 50%;
+}
+/*BODY*/
+.information {
+    text-align: center;
+    font-family: Tahoma;
+}
+.informationList {
+    list-style-type: none;
+}
+.pageButton {
+    margin: 2px 0px;
+    background-color: white;
+    text-align: center;
+    padding: 3px 5px;
+    color: black;
+    border-color: black;
+    font-size: 15px;
+    font-family: Consolas;
+}
+.pageButton:hover {
+    background-color: lightgray;
+}

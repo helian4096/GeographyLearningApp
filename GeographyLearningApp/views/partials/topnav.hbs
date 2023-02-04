@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Top Navigation</title>
+        <link rel="stylesheet" type="text/css" href = "css/style.css">
+    </head>
+    <body>
+        <div class="top-nav">
+            <ul class="top-horizontal lefty">
+                <li class="top-menu lefty"><a href="/">Home</a></li>
+                <li class="top-menu lefty"><a href="database">List of Maps</a></li>
+                {{#if logged_in}}
+                    <li class="top-menu lefty"><a href="user_results">Quiz History</a></li>
+                {{/if}}
+                <li class="top-menu lefty">
+                    <a href="https://docs.google.com/forms/d/1cSDRXcBiu7-_PdLtf2qp3VRrXH2JagH2m3F88VTxSjM/edit" target="_blank">
+                        Feedback
+                    </a>
+                </li>
+                {{#if logged_in}}
+                    <div class="dropdown">
+                        <li class="top-menu lefty dropbtn">Hello, {{user_name}}!</li>
+                        <div class="dropdown-content">
+                            <a href="logout">Log Out</a>
+                            <a href="account_manager">Account Settings</a>
+                        </div>
+                    </div>
+                {{else}}
+                    <li class="top-menu righty"><a href="login">Log In</a></li>
+                {{/if}}
+            </ul>
+        </div>
+    </body>
+</html>

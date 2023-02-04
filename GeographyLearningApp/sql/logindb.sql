@@ -1,0 +1,1 @@
+CREATE TABLE loginfo(username TEXT, hash TEXT);

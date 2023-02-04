@@ -1,0 +1,196 @@
+/*PAGE BODY*/
+body {
+    margin: 0px;
+    background-color: #cac9f0;
+}
+
+/*TOP NAV*/
+.top-nav {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: auto;
+    height: 50px;
+    width: auto;
+    background-color: #00008B;
+}
+.top-horizontal {
+    list-style-type: none;
+    margin: 10px 5px;
+    padding: 0;
+    overflow: hidden;
+}
+.message {
+    list-style-type: none;
+}
+.lefty {
+    float: left;
+}
+.righty {
+    float: right;
+}
+.top-menu1 {
+    display: block;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: white;
+}
+.top-menu a {
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+.top-menu a:hover {
+    background-color: #4d4dff;
+}
+/*** BODY ***/
+.content {
+    margin: 10px;
+    text-align: center;
+    font-family: Consolas;
+}
+.pageButton {
+    margin: 2px 0px;
+    background-color: white;
+    text-align: center;
+    padding: 3px 5px;
+    color: black;
+    border-color: black;
+    font-size: 15px;
+    font-family: Consolas;
+}
+.pageButton:hover {
+    background-color: lightgray;
+}
+a {
+    text-decoration: none;
+}
+.selectish {
+    border-radius: 10px;
+    background-color: #332a9c;
+    color: white;
+    padding: 2px 10px;
+    font-size: 20px;
+    font-family: Consolas;
+    text-align: center;
+    border-style: none;
+}
+.wrong {
+    background-color: #990000;
+    color: white;
+} /* figure out formatting, this is the one for messages displaying an error */
+h2 {
+    font-family: Courier New;
+}
+/*** TABLE STUFF ***/
+table {
+    border-radius: 5px;
+    margin-left:auto; 
+    margin-right:auto;
+  }
+table, th, td {
+    background-color: #332a9c;
+    color: white;
+    padding: 3px 25px;
+    font-family: Consolas;
+    font-size: 20px;
+}
+select, input {
+    border-radius: 5px;
+    background-color: #332a9c;
+    color: white;
+    padding: 2px 10px;
+    font-size: 15px;
+    font-family: Consolas;
+    text-align: center;
+    border-style: none;
+}
+/*GRAPHIC*/
+.svgmap {
+    margin: 0px;
+    background-color: #cac9f0;
+}
+.displayContainer_1 svg polyline {
+    fill: #AAA;
+    stroke:black;
+    transition: fill 0.1s ease-in;
+}
+.displayContainer_1 svg path {
+    fill: #AAA;
+    stroke:black;
+    transition: fill 0.1s ease-in;
+}
+.displayContainer_1 svg polyline:hover {
+    fill: #6966e8;
+    stroke:black;
+    pointer-events:all;
+}
+.displayContainer_1 svg path:hover {
+    fill: #6966e8;
+    stroke:black;
+    pointer-events:all;
+}
+
+.displayContainer_1 svg{
+    width: 50%;
+    height: 50%;
+
+}
+/*BODY*/
+.information {
+    text-align: center;
+    font-family: Tahoma;
+}
+.informationList {
+    list-style-type: none;
+}
+.pageButton {
+    margin: 2px 0px;
+    background-color: white;
+    text-align: center;
+    padding: 3px 5px;
+    color: black;
+    border-color: black;
+    font-size: 15px;
+    font-family: Consolas;
+}
+.pageButton:hover {
+    background-color: lightgray;
+}
+/*DROPDOWN - UPDATE: semi fixed, OLD: FIX to match website format*/
+.dropbtn {
+  background-color: #00008B;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #9191ff;
+  min-width: 60px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #228;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #4d4dff;}

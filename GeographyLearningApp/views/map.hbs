@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GeoQuizzer Map Quizzes</title>
+        <link rel="stylesheet" type="text/css" href = "css/style.css">
+    </head>
+    <body>
+        {{> topnav}}
+        <div class="content">
+            <p>Click a region below, and then enter the capital in the box!</p>
+            <p id="country"></p>
+            <p id="result"></p>
+            <input type="text" id="capital"><br><br>
+            <button id="capitalSubmit" class="pageButton" type="button">Submit Your Answer</button>
+            <p id="score_display">Score: 0</p>
+            {{#if logged_in}}
+                <p>If you would like to save your work to your profile, use the button below (but the quiz will end).</p>
+                <form action="map_store" method="post">
+                    <input type="hidden" id="quiz_info" name="quiz_current" value="putvaluehere">
+                    <button id="savetodb" class="pageButton" type="submit">Save and Exit</button>
+                </form>
+            {{else}}
+                <p id="save_message">If you would like to save your work, create an account or log in with one you have.</p>
+            {{/if}}
+        </div>
+        <div id="map">
+            {{#if europe_bool}}
+                {{> europe}}
+            {{/if}}
+            {{#if southamerica_bool}}
+                {{> southamerica}}
+            {{/if}}
+            {{#if usa_bool}}
+                {{> usa}}
+            {{/if}}
+        </div>
+    </body>
+    <p id="display_map" hidden>{{display_map}}</p>
+    <p id="southamerica_info" hidden>{{southamerica_info}}</p>
+    <p id="europe_info" hidden>{{europe_info}}</p>
+    <p id="usa_info" hidden>{{usa_info}}</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/map_request.js"></script>
+</html>
